@@ -1,0 +1,18 @@
+{
+  "title": "Positive News Scrapper",
+  "description": "https://www.positive.news/",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "URLs to start with.",
+      "editor": "requestListSources",
+      "prefill": [
+        { "url": "https://www.positive.news/articles/" }
+      ]
+    }
+  },
+  "required": []
+}
