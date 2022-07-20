@@ -102,7 +102,7 @@ Apify.main(async () => {
             $('a.card__image__link').each((_, el) => {
                 urls.push({ url: el.attribs.href });
             });
-            await handleSinglePages([urls[0]])
+            await handleSinglePages(urls)
         },
         handleFailedRequestFunction: async ({ request }) => {
             log.debug(`Request ${request.url} failed twice.`);
